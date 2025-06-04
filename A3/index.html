@@ -6,13 +6,18 @@
     <title>Document</title>
     <script>
         function greet(){
-            alert(textName1.value+textName2);
+            alert(textName1.value);
+        }
+        function add(){
+            let a = textName1.value;
+            let b = textName2.value;
+            alert(a+b)
         }
     </script>
 </head>
 <body>
     <input type="text" id="textName1"/>
     <input type="text" id="textName2"/>
-    <button onclick="greet()", style="background-color: mediumseagreen;">Click</button>
+    <button onclick="add()", style="background-color: mediumseagreen;">Add</button>
 </body>
 </html>
