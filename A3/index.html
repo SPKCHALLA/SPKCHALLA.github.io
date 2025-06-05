@@ -35,12 +35,19 @@
             multiply();
             divide();
         }
+        function compute_display(){
+            divResult.innerHTML = a+b;
+            divResult.innerHTML = a-b
+            divResult.innerHTML = a*b
+            divResult.innerHTML = a/b
+        }
     </script>
 </head>
 <body>
     <input type="text" id="textName1"/>
     <input type="text" id="textName2"/>
     <button onclick="compute()", style="background-color: mediumseagreen;">compute</button>
+    <button onclick="compute_display()", style="background-color: mediumseagreen;">compute & display</button>
 
     <div id="divResult">
         <!-- what to write here? -->
