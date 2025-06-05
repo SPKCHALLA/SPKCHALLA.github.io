@@ -12,6 +12,22 @@
             let a = Number(textName1.value);
             let b = Number(textName2.value);
             alert(a+b)
+            //divResult.innerHTML = a + b;
+        }
+        function subtract(){
+            let a = Number(textName1.value);
+            let b = Number(textName2.value);
+            alert(a-b);
+        }
+        function multiply(){
+          let a = Number(textName1.value);
+          let b = Number(textName2.value);
+          alert(a*b);  
+        }
+        function divide(){
+            let a = Number(textName1.value);
+            let b = Number(textName2.value);
+            alert(a/b);
         }
     </script>
 </head>
@@ -19,5 +35,9 @@
     <input type="text" id="textName1"/>
     <input type="text" id="textName2"/>
     <button onclick="add()", style="background-color: mediumseagreen;">Add</button>
+
+    <div id="divResult">
+        <!-- what to write here? -->
+    </div>
 </body>
 </html>
