@@ -29,12 +29,18 @@
             let b = Number(textName2.value);
             alert(a/b);
         }
+        function compute(){
+            add();
+            subtract();
+            multiply();
+            divide();
+        }
     </script>
 </head>
 <body>
     <input type="text" id="textName1"/>
     <input type="text" id="textName2"/>
-    <button onclick="add()", style="background-color: mediumseagreen;">Add</button>
+    <button onclick="compute()", style="background-color: mediumseagreen;">compute</button>
 
     <div id="divResult">
         <!-- what to write here? -->
