@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        
+
+        function printing(){
+
+            let a = document.getElementById("textName1").value;
+            let b = document.getElementById("textName2").value;
+            let c = document.getElementById("textName3").value;
+            let str = `Here is the information:
+            
+                <h2>${a}</h2>
+                <h2>${b}</h2>
+                <h2>${c}</h2>
+            `
+
+            // console.log(a.value);
+            // console.log(b.value);
+            // console.log(c.value);
+
+            divResult.innerHTML = str;
+            
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <center>
+    <input type="text" id="textName1"/><br><br>
+    <input type="text" id="textName2"/><br><br>
+    <input type="text" id="textName3"/><br><br>
+    <button onclick="printing()">Submit</button>
+    <hr>
+    </center>
+    <div id="divResult"></div>
+
+    
+    
+</body>
+</html>
