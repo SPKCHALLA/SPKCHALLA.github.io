@@ -11,48 +11,56 @@
         function add(){
             let a = Number(textName1.value);
             let b = Number(textName2.value);
-            alert(a+b)
+            return a+b;
             //divResult.innerHTML = a + b;
         }
         function subtract(){
             let a = Number(textName1.value);
             let b = Number(textName2.value);
-            alert(a-b);
+            return a-b
         }
         function multiply(){
           let a = Number(textName1.value);
           let b = Number(textName2.value);
-          alert(a*b);  
+          return a*b;  
         }
         function divide(){
             let a = Number(textName1.value);
             let b = Number(textName2.value);
-            alert(a/b);
+            return a/b;
         }
         function compute(){
-            add();
-            subtract();
-            multiply();
-            divide();
+            let addition = add();
+            let subtraction = subtract();
+            let multiplication = multiply();
+            let division = divide();
+
+            // console.log(addition);
+            // console.log(subtraction);
+            // console.log(multiplication);
+            // console.log(division);
+
+            document.writeln(addition);
+            document.writeln(subtraction);
+            document.writeln(multiplication);
+            document.writeln(division);
+        
         }
-        function compute_display(){
-            let a = Number(textName1.value);
-            let b = Number(textName2.value);
-            document.writeln(a+b);
-            document.writeln(a-b);
-            document.writeln(a*b);
-            document.writeln(a/b);
-        }
+        // function compute_display(){
+        //     let a = Number(textName1.value);
+        //     let b = Number(textName2.value);
+        //     document.writeln(a+b);
+        //     document.writeln(a-b);
+        //     document.writeln(a*b);
+        //     document.writeln(a/b);
+        // }
     </script>
 </head>
 <body>
     <input type="text" id="textName1"/>
     <input type="text" id="textName2"/>
-    <button onclick="compute()", style="background-color: mediumseagreen;">compute</button>
-    <button onclick="compute_display()", style="background-color: mediumseagreen;">compute & display</button>
+    <!-- <button onclick="compute()", style="background-color: mediumseagreen;">compute</button> -->
+    <button onclick="compute()", style="background-color: mediumseagreen;">Calculate</button>
 
-    <div id="divResult">
-        <!-- what to write here? -->
-    </div>
 </body>
 </html>
