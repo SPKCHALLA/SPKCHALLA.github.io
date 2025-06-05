@@ -14,42 +14,42 @@
             alert(a+b)
             //divResult.innerHTML = a + b;
         }
-        function subtract(){
-            let a = Number(textName1.value);
-            let b = Number(textName2.value);
-            alert(a-b);
-        }
-        function multiply(){
-          let a = Number(textName1.value);
-          let b = Number(textName2.value);
-          alert(a*b);  
-        }
-        function divide(){
-            let a = Number(textName1.value);
-            let b = Number(textName2.value);
-            alert(a/b);
-        }
-        function compute(){
-            add();
-            subtract();
-            multiply();
-            divide();
-        }
-        function compute_display(){
-            let a = Number(textName1.value);
-            let b = Number(textName2.value);
-            document.writeln(a+b);
-            document.writeln(a-b);
-            document.writeln(a*b);
-            document.writeln(a/b);
-        }
+        // function subtract(){
+        //     let a = Number(textName1.value);
+        //     let b = Number(textName2.value);
+        //     alert(a-b);
+        // }
+        // function multiply(){
+        //   let a = Number(textName1.value);
+        //   let b = Number(textName2.value);
+        //   alert(a*b);  
+        // }
+        // function divide(){
+        //     let a = Number(textName1.value);
+        //     let b = Number(textName2.value);
+        //     alert(a/b);
+        // }
+        // function compute(){
+        //     add();
+        //     subtract();
+        //     multiply();
+        //     divide();
+        // }
+        // function compute_display(){
+        //     let a = Number(textName1.value);
+        //     let b = Number(textName2.value);
+        //     document.writeln(a+b);
+        //     document.writeln(a-b);
+        //     document.writeln(a*b);
+        //     document.writeln(a/b);
+        // }
     </script>
 </head>
 <body>
     <input type="text" id="textName1"/>
     <input type="text" id="textName2"/>
-    <button onclick="compute()", style="background-color: mediumseagreen;">compute</button>
-    <button onclick="compute_display()", style="background-color: mediumseagreen;">compute & display</button>
+    <button onclick="add()", style="background-color: mediumseagreen;">Add</button>
+    <!-- <button onclick="compute_display()", style="background-color: mediumseagreen;">compute & display</button> -->
 
     <div id="divResult">
         <!-- what to write here? -->
