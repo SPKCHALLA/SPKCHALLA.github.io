@@ -2,8 +2,8 @@ const showLogin = () => {
     let str=`
     <div class='App-Container'>
     <h1>Login Form</h1>
-    <p><input type="text" id="txtEmail"></p>
-    <p><input type="password" id="txtPass"></p>
+    <p>Email: <input type="text" id="txtEmail"></p>
+    <p>Password: <input type="password" id="txtPass"></p>
     <p><button>Log In</button></p>
     <p><button onclick='showRegister()'>Create Account</button></p>
     </div>
@@ -13,12 +13,14 @@ const showLogin = () => {
 
 const showRegister = () => {
       let str=`
+    <div class='App-Container'>
     <h1>Register Form</h1>
-    <p><input type="text" id="txtName"></p>
-     <p><input type="text" id="txtEmail"></p>
-    <p><input type="password" id="txtPass"></p>
+    <p>Name: <input type="text" id="txtName"></p>
+    <p>Email: <input type="text" id="txtEmail"></p>
+    <p>Password: <input type="password" id="txtPass"></p>
     <button>Register</button>
     <p><button onclick='showLogin()'>Already have an Account?</button></p>
+    </div>
     `
     root.innerHTML = str
 }
