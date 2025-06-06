@@ -1,0 +1,6 @@
+When using arrow functions, make sure that call i only after creating it
+If that is about normal functions, we may use any order!
+
+"find" is used when we know that there are unique values, if so, it prints them
+
+"filter" filters out the numbers/elements which 

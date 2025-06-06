@@ -28,10 +28,10 @@ const showRegister = () => {
 
 const showHome = ()=>{
     let str = `
-    
+    <center>
     <h1>Welcome</h1>
     <p>You are now on the Home Page</p>
-    
+    </center>
     `
     root.innerHTML = str
 }
