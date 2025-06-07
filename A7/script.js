@@ -82,13 +82,14 @@ const process = () => {
         showHome()
     }
     else if(dropdown_value==="2"){
-        if(user.balance-amount>0){
+        if(user.balance>amount){
         user.balance=user.balance-amount;
         showHome()
         }
-        if(user.balance-amount<0){
+        if(user.balance<amount){
             showHome()
             shmsg.innerHTML = "You have insufficient Funds";
+            //showHome()
             
         }
     }else {
