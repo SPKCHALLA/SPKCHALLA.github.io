@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #enter{
+            background-color: rgb(236, 245, 245);
+            border: solid 1px;
+            /* margin-inline: 50px; */
+            margin-top: 50px;
+            margin-right: 350px;
+            margin-left: 350px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            border-radius: 12px;
+            box-shadow: antiquewhite;
+            
+
+            
+            
+        }
+        #but{ 
+            border-radius: 4px;
+            padding: 10px;
+            background-color: rgb(163, 173, 228);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 15px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="enter">
+        <center>
+            <h1>Enter the name for Details</h1>
+            <input type="text" id="txt1"><p><button onclick="doit()" id="but">Submit</button></p>
+        </center>
+    </div>
+    <div id="dvUsers">
+        
+    </div>
+    <script>
+      const url = "https://jsonplaceholder.typicode.com/users";
+
+      function doit(){
+        let str = `<div>`;
+      fetch(url)
+        .then((res) => res.json())
+        .then((users) => {
+          users.map((user) => {
+            if(user.name=== document.getElementById("txt1").value){
+                str += `<div>${user.name}</div><div>${user.email}</div><div>${user.username}</div>`;
+            }
+            
+          });
+
+          dvUsers.innerHTML = str + "</div>";
+        });
+      }
+      
+    </script>
+  </body>
+</html>
