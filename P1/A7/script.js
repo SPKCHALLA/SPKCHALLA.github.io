@@ -2,8 +2,8 @@ const users = [];
 let user={}
 const showLogin = () => {
   let str = `
+  <div><h1>ATM Project</h1></div>
     <div>
-    <h1>ATM Project</h1>
     <h2>Login Form</h2>
     <p><div id="dvMsg"></div></p>
     <p><input type="text" id="txtEmail"></p>
