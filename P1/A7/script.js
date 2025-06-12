@@ -3,7 +3,8 @@ let user={}
 const showLogin = () => {
   let str = `
     <div>
-    <h1>Login Form</h1>
+    <h1>ATM Project</h1>
+    <h2>Login Form</h2>
     <p><div id="dvMsg"></div></p>
     <p><input type="text" id="txtEmail"></p>
     <p><input type="password" id="txtPass"></p>
